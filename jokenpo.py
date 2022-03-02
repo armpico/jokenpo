@@ -1,7 +1,5 @@
 import random
 
-from click import option
-
 class Option:
     rock = 'pedra'
     papper = 'papel'
@@ -10,7 +8,6 @@ class Option:
     def from_int(int_value:int) -> str:
         assert(int_value in {1,2,3})
         if int_value == 1:
-            Option.rock
             return Option.rock
         if int_value == 2:
             return Option.papper
